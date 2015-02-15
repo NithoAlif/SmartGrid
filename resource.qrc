@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/iconmonstr-danger-icon.svg</file>
+        <file>Icons/iconmonstr-help-2-icon.svg</file>
+        <file>Icons/iconmonstr-info-icon.svg</file>
+        <file>Icons/iconmonstr-open-folder-icon.svg</file>
+        <file>Icons/iconmonstr-puzzle-9-icon.svg</file>
+    </qresource>
+</RCC>
