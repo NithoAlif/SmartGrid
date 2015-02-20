@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = SmartGrid
 TEMPLATE = app
@@ -14,12 +14,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    smartgrid.cpp \
-    barang.cpp
+    barang.cpp \
+    smartgriddata.cpp \
+    qcustomplot.cpp \
+    greedy.cpp
 
 HEADERS  += mainwindow.h \
-    smartgrid.h \
-    barang.h
+    barang.h \
+    smartgriddata.h \
+    qcustomplot.h \
+    greedy.h
 
 FORMS    += mainwindow.ui \
 

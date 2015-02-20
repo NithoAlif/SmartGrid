@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
+    <width>590</width>
     <height>360</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>640</width>
+    <width>590</width>
     <height>360</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>640</width>
+    <width>590</width>
     <height>360</height>
    </size>
   </property>
@@ -27,7 +27,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="resource.qrc">
-    <normaloff>:/Icons/iconmonstr-puzzle-9-icon.svg</normaloff>:/Icons/iconmonstr-puzzle-9-icon.svg</iconset>
+    <normaloff>:/Icons/iconmonstr-puzzle-10-icon.svg</normaloff>:/Icons/iconmonstr-puzzle-10-icon.svg</iconset>
   </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
@@ -38,19 +38,19 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>531</width>
+      <width>571</width>
       <height>341</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>531</width>
+      <width>571</width>
       <height>341</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>531</width>
+      <width>571</width>
       <height>341</height>
      </size>
     </property>
@@ -58,7 +58,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tabData">
      <attribute name="title">
@@ -68,8 +68,189 @@
       <string>Data</string>
      </attribute>
      <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
       <item row="0" column="0">
-       <widget class="QTableView" name="tableView"/>
+       <widget class="QTableWidget" name="tableData">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="rowCount">
+         <number>0</number>
+        </property>
+        <property name="columnCount">
+         <number>7</number>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>115</number>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>1</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Equipment</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Energy (kWh)</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Slots</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Release Time</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Deadline</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Priority</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string># Times</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>549</width>
+           <height>92</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="leftMargin">
+           <number>6</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>6</number>
+          </property>
+          <property name="bottomMargin">
+           <number>3</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>4</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_slot_waktuA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_kWh_maxA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_slot_waktu">
+            <property name="text">
+             <string>Number of Slots per Day		:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_n_progresifA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_selang_tarifA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_kWh_max">
+            <property name="text">
+             <string>Maximum Energy Consumption	:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_n_progresif">
+            <property name="text">
+             <string>Number of Progressive Rates	:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_selang_tarif">
+            <property name="text">
+             <string>Number of Rates Variety		:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="buttonGraph">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Graph</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -82,96 +263,455 @@
      </attribute>
      <layout class="QGridLayout" name="gridLayout">
       <property name="leftMargin">
-       <number>9</number>
+       <number>8</number>
       </property>
-      <item row="0" column="0">
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item row="1" column="0">
        <widget class="QTableWidget" name="tableCalculation">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="showGrid">
-         <bool>true</bool>
-        </property>
-        <property name="sortingEnabled">
-         <bool>false</bool>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
         </property>
         <property name="rowCount">
          <number>0</number>
         </property>
         <property name="columnCount">
-         <number>0</number>
+         <number>49</number>
         </property>
         <attribute name="horizontalHeaderVisible">
          <bool>false</bool>
         </attribute>
-        <attribute name="horizontalHeaderCascadingSectionResizes">
-         <bool>false</bool>
-        </attribute>
         <attribute name="horizontalHeaderDefaultSectionSize">
-         <number>4</number>
-        </attribute>
-        <attribute name="horizontalHeaderHighlightSections">
-         <bool>true</bool>
+         <number>9</number>
         </attribute>
         <attribute name="horizontalHeaderMinimumSectionSize">
          <number>1</number>
         </attribute>
-        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-         <bool>false</bool>
-        </attribute>
         <attribute name="horizontalHeaderStretchLastSection">
-         <bool>false</bool>
+         <bool>true</bool>
         </attribute>
-        <attribute name="verticalHeaderCascadingSectionResizes">
-         <bool>false</bool>
-        </attribute>
-        <attribute name="verticalHeaderStretchLastSection">
-         <bool>false</bool>
-        </attribute>
+        <column>
+         <property name="text">
+          <string>Equipment</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QScrollArea" name="scrollArea_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>534</width>
+           <height>92</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>534</width>
+           <height>92</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>534</width>
+           <height>92</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="leftMargin">
+           <number>6</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>6</number>
+          </property>
+          <property name="bottomMargin">
+           <number>3</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>4</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_total_units">
+            <property name="text">
+             <string>Number of Units			:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_total_costA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_total_unitsA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_total_kwhA">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_total_cost">
+            <property name="text">
+             <string>Total Cost			:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_total_kwh">
+            <property name="text">
+             <string>Total kWh			:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="buttonClear">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Clear</string>
+            </property>
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="buttonOptimize">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Optimize</string>
+            </property>
+            <property name="text">
+             <string>Optimize</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>           Time        :       00 01 02 03 04 05 07 08 09 10  11 12 13 14 15 16 17 18 19 20 21  22 23 24</string>
+        </property>
        </widget>
       </item>
      </layout>
     </widget>
    </widget>
-   <widget class="QPushButton" name="buttonOptimize">
-    <property name="enabled">
-     <bool>false</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>40</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>Optimize</string>
-    </property>
-    <property name="text">
-     <string>Optimize</string>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="buttonHelp">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>150</y>
-      <width>61</width>
-      <height>51</height>
+      <x>300</x>
+      <y>10</y>
+      <width>80</width>
+      <height>28</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="toolTip">
      <string>Help (Ctrl + H)</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Help</string>
     </property>
     <property name="icon">
      <iconset resource="resource.qrc">
@@ -179,8 +719,8 @@
     </property>
     <property name="iconSize">
      <size>
-      <width>48</width>
-      <height>48</height>
+      <width>16</width>
+      <height>16</height>
      </size>
     </property>
     <property name="shortcut">
@@ -190,17 +730,23 @@
    <widget class="QPushButton" name="buttonAbout">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>220</y>
-      <width>61</width>
-      <height>51</height>
+      <x>390</x>
+      <y>10</y>
+      <width>80</width>
+      <height>28</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="toolTip">
      <string>About (Ctrl + I)</string>
     </property>
     <property name="text">
-     <string/>
+     <string>About</string>
     </property>
     <property name="icon">
      <iconset resource="resource.qrc">
@@ -208,8 +754,8 @@
     </property>
     <property name="iconSize">
      <size>
-      <width>48</width>
-      <height>48</height>
+      <width>16</width>
+      <height>16</height>
      </size>
     </property>
     <property name="shortcut">
@@ -219,17 +765,23 @@
    <widget class="QPushButton" name="buttonQuit">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>290</y>
-      <width>61</width>
-      <height>51</height>
+      <x>480</x>
+      <y>10</y>
+      <width>80</width>
+      <height>28</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="toolTip">
      <string>Quit (Ctrl + Q)</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Quit</string>
     </property>
     <property name="icon">
      <iconset resource="resource.qrc">
@@ -237,8 +789,8 @@
     </property>
     <property name="iconSize">
      <size>
-      <width>48</width>
-      <height>48</height>
+      <width>16</width>
+      <height>16</height>
      </size>
     </property>
     <property name="shortcut">
@@ -248,17 +800,23 @@
    <widget class="QPushButton" name="buttonOpen">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>80</y>
-      <width>61</width>
-      <height>51</height>
+      <x>210</x>
+      <y>10</y>
+      <width>80</width>
+      <height>28</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="toolTip">
      <string>Open (Ctrl + O)</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Open</string>
     </property>
     <property name="icon">
      <iconset resource="resource.qrc">
@@ -266,17 +824,58 @@
     </property>
     <property name="iconSize">
      <size>
-      <width>51</width>
-      <height>51</height>
+      <width>16</width>
+      <height>16</height>
      </size>
     </property>
     <property name="shortcut">
      <string>Ctrl+O</string>
     </property>
    </widget>
+   <widget class="QCustomPlot" name="plotTariff" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>49</y>
+      <width>551</width>
+      <height>293</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClose">
+    <property name="geometry">
+     <rect>
+      <x>517</x>
+      <y>317</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <zorder>tabWidget</zorder>
+   <zorder>plotTariff</zorder>
+   <zorder>buttonClose</zorder>
+   <zorder>buttonOpen</zorder>
+   <zorder>buttonAbout</zorder>
+   <zorder>buttonHelp</zorder>
+   <zorder>buttonQuit</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="resource.qrc"/>
  </resources>
